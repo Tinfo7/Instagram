@@ -1,0 +1,15 @@
+main {
+  section {
+    display: flex;
+    margin-left: 484px;
+    margin-right: 484px;
+    padding-top: 30px;
+    .post-story {
+      background-color: red;
+    }
+    aside {
+      background-color: blue;
+      
+    }
+  }
+}

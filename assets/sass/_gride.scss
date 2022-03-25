@@ -1,0 +1,24 @@
+main {
+  width: 1903px;
+  section {
+    margin-left: 484px;
+    margin-right: 484px;
+    padding-top: 30px;
+    width: 935px;
+    .post-story {
+      flex: 7;
+      height: 542px;
+      min-width: 635px;
+      margin-left: 0;
+    }
+    aside {
+      flex: 3;
+      height: 542px;
+      min-width: 293px;
+      margin-left: 0;
+      @media (max-width: 999px) {
+        display: none;
+      }
+    }
+  }
+}
