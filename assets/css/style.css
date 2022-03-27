@@ -1,24 +1,124 @@
 * { margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-body, html { width: 100%; }
-
 nav { width: 100%; height: 60px; border-bottom: 1px solid #dbdbdb; }
 
 nav section { height: 60px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
-main { width: 1903px; }
+nav section .start { width: 333px; }
 
-main section { margin-left: 484px; margin-right: 484px; padding-top: 30px; width: 935px; }
+nav section .start h1 { font-family: sans-serif; font-size: 20px; cursor: pointer; }
 
-main section .post-story { -webkit-box-flex: 7; -ms-flex: 7; flex: 7; height: 542px; min-width: 635px; margin-left: 0; }
+nav section .center { width: 268px; }
 
-main section aside { -webkit-box-flex: 3; -ms-flex: 3; flex: 3; height: 542px; min-width: 293px; margin-left: 0; }
+nav section .center div svg { margin-bottom: -28px; z-index: 1; position: relative; margin-left: 13px; }
+
+nav section .center div input { outline: none; border: none; background-color: #efefef; width: 268px; height: 36px; border-radius: 7px; padding-left: 40px; color: #8e8e8e; margin-bottom: 22px; }
+
+nav section .end { width: 333px; display: -webkit-box; display: -ms-flexbox; display: flex; margin-left: 100px; }
+
+nav section .end a { margin-left: 22px; }
+
+nav section .end img { width: 24px; height: 24px; border-radius: 50px; -o-object-fit: cover; object-fit: cover; margin-left: 22px; cursor: pointer; }
+
+main { height: 850px; width: 1903px; }
+
+main section { padding-top: 30px; margin-right: 484px; margin-left: 484px; width: 935px; }
+
+main section .post-story { -webkit-box-flex: 614px; -ms-flex: 614px; flex: 614px; height: 820px; margin-left: 0; }
+
+main section aside { -webkit-box-flex: 293px; -ms-flex: 293px; flex: 293px; height: 542px; }
 
 @media (max-width: 999px) { main section aside { display: none; } }
 
+main { background-color: #fafafa; }
+
 main section { display: -webkit-box; display: -ms-flexbox; display: flex; margin-left: 484px; margin-right: 484px; padding-top: 30px; }
 
-main section .post-story { background-color: red; }
+main section .post-story .header { height: 115px; width: 614px; border: 1px solid #dbdbdb; border-radius: 4px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-bottom: 24px; }
 
-main section aside { background-color: blue; }
+main section .post-story .header > button { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; border: none; outline: none; background: none; cursor: pointer; padding: 0px 8px 0px 8px; }
+
+main section .post-story .header > button img { width: 56px; height: 56px; border-radius: 50px; margin-bottom: 8px; border: 2px solid #aaa; }
+
+main section .post-story .header > button span { font-family: sans-serif; font-size: 11px; color: #8e8e8e; }
+
+main section .post-story .postes { width: 614px; height: 917px; }
+
+main section .post-story .postes .titel-post { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; height: 61px; border: 1px solid #dbdbdb; border-radius: 2px; padding-left: 16px; }
+
+main section .post-story .postes .titel-post img { border-radius: 50px; width: 32px; height: 32px; -o-object-fit: cover; object-fit: cover; }
+
+main section .post-story .postes .titel-post span { margin-left: 14px; font-family: sans-serif; color: #262626; }
+
+main section .post-story .postes .post img { width: 100%; }
+
+main section .post-story .postes .post .followers { border: 1px solid #dbdbdb; padding-top: 6px; margin-top: -4px; height: 247px; }
+
+main section .post-story .postes .post .followers .icon, main section .post-story .postes .post .followers .who, main section .post-story .postes .post .followers .about, main section .post-story .postes .post .followers .data, main section .post-story .postes .post .followers .comment { padding-left: 10px; }
+
+main section .post-story .postes .post .followers .icon svg { cursor: pointer; }
+
+main section .post-story .postes .post .followers .who { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding-top: 8px; padding-bottom: 8px; }
+
+main section .post-story .postes .post .followers .who img { width: 24px; height: 24px; -o-object-fit: cover; object-fit: cover; border-radius: 50px; margin-right: 4px; }
+
+main section .post-story .postes .post .followers .who span { font-family: sans-serif; font-size: 13px; padding-left: 8px; }
+
+main section .post-story .postes .post .followers .who span a { text-decoration: none; color: #262626; font-weight: bold; font-size: 14px; }
+
+main section .post-story .postes .post .followers .about { padding-top: 8px; font-family: sans-serif; }
+
+main section .post-story .postes .post .followers .about span { font-size: 13px; }
+
+main section .post-story .postes .post .followers .about a { text-decoration: none; color: #262626; font-weight: bold; font-size: 14px; }
+
+main section .post-story .postes .post .followers .data { padding-top: 4px; border-bottom: 1px solid #8b8b8b8b; padding-bottom: 20px; }
+
+main section .post-story .postes .post .followers .data span { color: #aaa; font-size: 12px; font-family: sans-serif; cursor: pointer; }
+
+main section .post-story .postes .post .followers .data p { cursor: pointer; color: #aaa; font-size: 10px; font-family: sans-serif; padding-top: 8px; }
+
+main section .post-story .postes .post .followers .comment { padding-left: 16px; padding-top: 6px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+main section .post-story .postes .post .followers .comment svg { margin-right: 16px; }
+
+main section .post-story .postes .post .followers .comment input { border: none; outline: none; height: 50px; }
+
+main section aside .profile { display: -webkit-box; display: -ms-flexbox; display: flex; margin-left: 25px; margin-top: 29px; }
+
+main section aside .profile img { width: 56px; height: 56px; -o-object-fit: cover; object-fit: cover; border-radius: 50px; }
+
+main section aside .profile p { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; line-height: 25px; margin-left: 12px; }
+
+main section aside .profile p a { font-family: sans-serif; text-decoration: none; color: #262626; font-size: 14px; }
+
+main section aside .profile p span { font-family: sans-serif; font-size: 13px; color: #aaa; }
+
+main section aside .profile button { margin-left: 80px; border: none; outline: none; background: none; }
+
+main section aside .profile button a { text-decoration: none; color: #21a2f7; }
+
+main section aside .show { margin-left: 25px; margin-top: 29px; }
+
+main section aside .show span { font-family: sans-serif; font-weight: bold; font-size: 15px; color: #aaa; }
+
+main section aside .show button { margin-left: 90px; border: none; outline: none; background: none; }
+
+main section aside .show button a { text-decoration: none; color: black; }
+
+main section aside .account { margin-top: 23px; }
+
+main section aside .account img { width: 32px; height: 32px; border-radius: 50px; }
+
+main section aside .account div { margin-left: 15px; margin-top: 6px; display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+main section aside .account div .text p { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; line-height: 20px; margin-left: 12px; }
+
+main section aside .account div .text p a { font-family: sans-serif; text-decoration: none; color: #262626; font-size: 14px; }
+
+main section aside .account div .text p span { font-family: sans-serif; font-size: 13px; color: #aaa; }
+
+main section aside .account div .btn button { margin-left: 80px; border: none; outline: none; background: none; }
+
+main section aside .account div .btn button a { text-decoration: none; color: #21a2f7; }
 /*# sourceMappingURL=style.css.map */

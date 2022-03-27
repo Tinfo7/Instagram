@@ -1,15 +1,261 @@
 main {
+  background-color: #fafafa;
   section {
     display: flex;
     margin-left: 484px;
     margin-right: 484px;
     padding-top: 30px;
     .post-story {
-      background-color: red;
+      .header {
+        height: 115px;
+        width: 614px;
+        border: 1px solid #dbdbdb;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 24px;
+        & > button {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          border: none;
+          outline: none;
+          background: none;
+          cursor: pointer;
+          padding: 0px 8px 0px 8px;
+          img {
+            width: 56px;
+            height: 56px;
+            border-radius: 50px;
+            margin-bottom: 8px;
+            border: 2px solid #aaa;
+          }
+          span {
+            font-family: sans-serif;
+            font-size: 11px;
+            color: #8e8e8e;
+          }
+        }
+      }
+      .postes {
+        width: 614px;
+        height: 917px;
+        .titel-post {
+          display: flex;
+          align-items: center;
+          height: 61px;
+          border: 1px solid #dbdbdb;
+          border-radius: 2px;
+          padding-left: 16px;
+          img {
+            border-radius: 50px;
+            width: 32px;
+            height: 32px;
+            object-fit: cover;
+          }
+          span {
+            margin-left: 14px;
+            font-family: sans-serif;
+            color: #262626;
+          }
+        }
+        .post {
+          img {
+            width: 100%;
+          }
+          .followers {
+            border: 1px solid #dbdbdb;
+            padding-top: 6px;
+            margin-top: -4px;
+            height: 247px;
+            .icon,
+            .who,
+            .about,
+            .data,
+            .comment {
+              padding-left: 10px;
+            }
+            .icon {
+              svg {
+                cursor: pointer;
+              }
+            }
+            .who {
+              display: flex;
+              align-items: center;
+              padding-top: 8px;
+              padding-bottom: 8px;
+              img {
+                width: 24px;
+                height: 24px;
+                object-fit: cover;
+                border-radius: 50px;
+                margin-right: 4px;
+              }
+              span {
+                font-family: sans-serif;
+                font-size: 13px;
+                padding-left: 8px;
+                a {
+                  text-decoration: none;
+                  color: #262626;
+                  font-weight: bold;
+                  font-size: 14px;
+                }
+              }
+            }
+            .about {
+              padding-top: 8px;
+              font-family: sans-serif;
+              span {
+                font-size: 13px;
+              }
+              a {
+                text-decoration: none;
+                color: #262626;
+                font-weight: bold;
+                font-size: 14px;
+              }
+            }
+            .data {
+              padding-top: 4px;
+              border-bottom: 1px solid #8b8b8b8b;
+              padding-bottom: 20px;
+              span {
+                color: #aaa;
+                font-size: 12px;
+                font-family: sans-serif;
+                cursor: pointer;
+              }
+              p {
+                cursor: pointer;
+                color: #aaa;
+                font-size: 10px;
+                font-family: sans-serif;
+                padding-top: 8px;
+              }
+            }
+            .comment {
+              padding-left: 16px;
+              padding-top: 6px;
+              display: flex;
+              align-items: center;
+              svg {
+                margin-right: 16px;
+              }
+              input {
+                border: none;
+                outline: none;
+                height: 50px;
+              }
+            }
+          }
+        }
+      }
     }
     aside {
-      background-color: blue;
-      
+      .profile {
+        display: flex;
+        margin-left: 25px;
+        margin-top: 29px;
+        img {
+          width: 56px;
+          height: 56px;
+          object-fit: cover;
+          border-radius: 50px;
+        }
+        p {
+          display: flex;
+          flex-direction: column;
+          line-height: 25px;
+          margin-left: 12px;
+          a {
+            font-family: sans-serif;
+            text-decoration: none;
+            color: #262626;
+            font-size: 14px;
+          }
+          span {
+            font-family: sans-serif;
+            font-size: 13px;
+            color: #aaa;
+          }
+        }
+        button {
+          margin-left: 80px;
+          border: none;
+          outline: none;
+          background: none;
+          a {
+            text-decoration: none;
+            color: #21a2f7;
+          }
+        }
+      }
+      .show {
+        margin-left: 25px;
+        margin-top: 29px;
+        span {
+          font-family: sans-serif;
+          font-weight: bold;
+          font-size: 15px;
+          color: #aaa;
+        }
+        button {
+          margin-left: 90px;
+          border: none;
+          outline: none;
+          background: none;
+          a {
+            text-decoration: none;
+            color: black;
+          }
+        }
+      }
+      .account {
+        margin-top: 23px;
+        img {
+          width: 32px;
+          height: 32px;
+          border-radius: 50px;
+        }
+        div {
+          margin-left: 15px;
+          margin-top: 6px;
+          display: flex;
+          .text {
+            p {
+              display: flex;
+              flex-direction: column;
+              line-height: 20px;
+              margin-left: 12px;
+              a {
+                font-family: sans-serif;
+                text-decoration: none;
+                color: #262626;
+                font-size: 14px;
+              }
+              span {
+                font-family: sans-serif;
+                font-size: 13px;
+                color: #aaa;
+              }
+            }
+          }
+          .btn {
+            button {
+              margin-left: 80px;
+              border: none;
+              outline: none;
+              background: none;
+              a {
+                text-decoration: none;
+                color: #21a2f7;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

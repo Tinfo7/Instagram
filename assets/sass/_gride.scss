@@ -1,21 +1,19 @@
 main {
+  height: 850px;
   width: 1903px;
   section {
-    margin-left: 484px;
-    margin-right: 484px;
     padding-top: 30px;
+    margin-right: 484px;
+    margin-left: 484px;
     width: 935px;
     .post-story {
-      flex: 7;
-      height: 542px;
-      min-width: 635px;
+      flex: 614px;
+      height: 820px;
       margin-left: 0;
     }
     aside {
-      flex: 3;
+      flex: 293px;
       height: 542px;
-      min-width: 293px;
-      margin-left: 0;
       @media (max-width: 999px) {
         display: none;
       }

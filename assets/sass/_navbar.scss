@@ -7,5 +7,51 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    .start {
+      width: 333px;
+      h1 {
+        font-family: sans-serif;
+        font-size: 20px;
+        cursor: pointer;
+      }
+    }
+    .center {
+      width: 268px;
+      div {
+        svg {
+          margin-bottom: -28px;
+          z-index: 1;
+          position: relative;
+          margin-left: 13px;
+        }
+        input {
+          outline: none;
+          border: none;
+          background-color: #efefef;
+          width: 268px;
+          height: 36px;
+          border-radius: 7px;
+          padding-left: 40px;
+          color: #8e8e8e;
+          margin-bottom: 22px;
+        }
+      }
+    }
+    .end {
+      width: 333px;
+      display: flex;
+      margin-left: 100px;
+      a {
+        margin-left: 22px;
+      }
+      img {
+        width: 24px;
+        height: 24px;
+        border-radius: 50px;
+        object-fit: cover;
+        margin-left: 22px;
+        cursor: pointer;
+      }
+    }
   }
 }
